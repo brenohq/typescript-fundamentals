@@ -16,8 +16,10 @@
   ],
   "scripts": {
     "clean": "rimraf lib",
-    "build": "tsc src/index.ts --outDir lib --types node --module commonjs --target ES2017",
+    "build": "tsc src/index.ts --outDir lib --module commonjs --target ES6",
     "test": "echo 'No tests'"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "typescript": "^4.0.3"
+  }
 }
